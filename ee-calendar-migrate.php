@@ -11,7 +11,7 @@ Requires PHP: 5.6
 add_action( 'parse_query', 'tw_ee_calendar_migrate' );
 
 function tw_ee_calendar_migrate() {
-    if( is_page( array('espresso_calendar', 'calendar') ) ) {
+    if( is_page( array('espresso_calendar', 'calendar', 'events-calendar') ) ) {
     	add_action( 'wp_enqueue_scripts', 'tw_ee_replace_scripts', 9 );
     }
 }
